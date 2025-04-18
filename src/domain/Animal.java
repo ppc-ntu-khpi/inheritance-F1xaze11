@@ -3,26 +3,23 @@ package domain;
 public class Animal {
 
     protected String name;
-
     protected int weight;
 
     public Animal() {
-        name="generic animal";
-        weight=25;
+        name = "тварина";
+        weight = 25;
     }
 
     public void eat() {
-        System.out.println("Animal eating...");
+        System.out.println(name + " їсть...");
     }
 
     public void speak() {
-        System.out.println("Animal speaking...");
+        System.out.println(name + " видає звук...");
     }
 
     @Override
     public String toString() {
-        return "My animal:" + "\nName:\t" + name + "\nWeight:\t" + weight+" kg";
+        return "Моя тварина:\nІм'я:\t" + name + "\nВага:\t" + weight + " кг";
     }
-
- 
 }
